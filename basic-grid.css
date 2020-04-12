@@ -1,0 +1,166 @@
+.basic-grid-first-row
+{
+    display:grid;
+   
+    gap:1rem;
+    /*Creating columns */
+                                    /*Minimum 240px, if able then go 100% */
+     grid-template-columns: repeat(2, minmax(240px, 1fr)); /* 1 FR = 100% = 1 Column; 2FR= 2FR*/
+     grid-auto-rows:240px;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+   
+}
+.list{
+    text-align:center;
+}
+li {
+    float: left;
+    margin-right:20px;
+  }
+  
+
+.resume
+{
+    display:grid;
+    padding-top:2rem;
+    
+    
+}
+.card-resume
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #353535;
+    font-size: 3rem;
+    color: #fff;
+    box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
+    height: 100%;
+    width: 100%;
+    border-radius: 4px;
+    transition: all 500ms;
+    overflow: hidden;
+    font-family: 'Fira Code', monospace;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    grid:2rem;
+    padding: 10px;
+    
+    
+  
+}
+.cResume
+{
+display:grid;
+grid-auto-columns:1000px;
+margin:auto;
+font-family: 'Fira Code', monospace;
+color:rgb(54, 190, 95);
+
+    
+}
+.date
+{
+float:right;
+}
+.title_res
+{
+    float:left;
+    align-self: center;
+}
+.card-tall
+{
+    
+    grid-row: span 2 / auto; /*Take two rows */
+    background-color: white;
+    animation: cardEntrance 700ms ease-out;
+    animation-fill-mode: backwards;
+    animation-delay:calc(1* var(--stagger-delay));
+}
+.card-wide
+{
+    grid-column: span 2 / auto;
+}
+::-webkit-scrollbar
+{
+    width:12px;
+    
+}
+::-webkit-scrollbar-thumb
+{
+    background: linear-gradient(transparent, #30ff00);
+    border-radius: 2px;
+}
+.myHeader
+{
+    font-family: 'Fira Code', monospace;
+    display:grid;
+    grid-auto-rows:20px;
+}
+.two-box
+{
+    display:grid;
+    grid-template-columns: repeat(2, minmax(240px, 1fr));
+    grid-auto-rows:300px;
+    gap:.5rem;
+  
+}
+.loop
+{
+    display:grid;
+margin-top: 50px;
+gap:0.5rem;
+grid-template-columns: repeat(4, minmax(60px, 1fr));
+}
+@keyframes cardEntrance
+{
+from{
+    opacity:0;
+    transform:scale(0.3);
+    filter:hue-rotate(180deg);
+}
+to
+{
+    opacity:1;
+    transform: scale(1);
+    filter:hue-rotate(0deg);
+}
+}
+
+#github
+{
+    background-color: white;
+    animation: cardEntrance 700ms ease-out;
+    animation-fill-mode: backwards;
+    animation-delay:calc(3* var(--stagger-delay));
+    
+}
+#linkedin
+{
+    background-color: white;
+    animation: cardEntrance 700ms ease-out;
+    animation-fill-mode: backwards;
+    animation-delay:calc(5* var(--stagger-delay));
+}
+#hackerrank
+{
+    background-color: white;
+    animation: cardEntrance 700ms ease-out;
+    animation-fill-mode: backwards;
+    animation-delay:calc(7* var(--stagger-delay));
+}
+
+#leetcode
+{
+    background-color: white;
+    animation: cardEntrance 700ms ease-out;
+    animation-fill-mode: backwards;
+    animation-delay:calc(9* var(--stagger-delay));
+}
