@@ -8,12 +8,28 @@
      grid-template-columns: repeat(2, minmax(240px, 1fr)); /* 1 FR = 100% = 1 Column; 2FR= 2FR*/
      grid-auto-rows:240px;
 }
+@media screen and (max-width:650px)
+{
+    .basic-grid-first-row
+{
+    display:grid;
+   
+    gap:1rem;
+    /*Creating columns */
+                                    /*Minimum 240px, if able then go 100% */
+     grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); /* 1 FR = 100% = 1 Column; 2FR= 2FR*/
+     grid-auto-rows:240px;
+}
+}
 ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
    
+}
+a{
+    color:white;
 }
 .list{
     text-align:center;
@@ -28,7 +44,7 @@ li {
 {
     display:grid;
     padding-top:2rem;
-    
+    grid-template-columns: repeat(1, minmax(240px, 1fr));
     
 }
 .card-resume
@@ -59,7 +75,7 @@ li {
 .cResume
 {
 display:grid;
-grid-auto-columns:1000px;
+
 margin:auto;
 font-family: 'Fira Code', monospace;
 color:rgb(54, 190, 95);
@@ -103,6 +119,7 @@ float:right;
     font-family: 'Fira Code', monospace;
     display:grid;
     grid-auto-rows:20px;
+    color:white;
 }
 .two-box
 {
@@ -117,7 +134,7 @@ float:right;
     display:grid;
 margin-top: 50px;
 gap:0.5rem;
-grid-template-columns: repeat(4, minmax(60px, 1fr));
+grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
 }
 @keyframes cardEntrance
 {
@@ -164,3 +181,13 @@ to
     animation-fill-mode: backwards;
     animation-delay:calc(9* var(--stagger-delay));
 }
+html {
+    scroll-behavior: smooth;
+  }
+
+  .project-child
+  {
+      display:grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      grid-auto-rows: 400px;
+  }
