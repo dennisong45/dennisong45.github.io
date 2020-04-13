@@ -94,16 +94,31 @@ float:right;
 .card-tall
 {
     
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #353535;
+    font-size: 3rem;
+    color: #fff;
+    box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
+    height: 100%;
+    width: 100%;
+    border-radius: 4px;
+    transition: all 500ms;
+    overflow: hidden;
+    font-family: 'Fira Code', monospace;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
     grid-row: span 2 / auto; /*Take two rows */
     background-color: white;
     animation: cardEntrance 700ms ease-out;
     animation-fill-mode: backwards;
     animation-delay:calc(1* var(--stagger-delay));
 }
-.card-tall:active
-{
-    background-image: url('./images/kl2.jpg');
-}
+
 .card-wide
 {
     grid-column: span 2 / auto;
