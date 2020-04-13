@@ -192,3 +192,8 @@ html {
       grid-auto-rows: 400px;
       gap:1rem;
   }
+#textP
+{
+    font-size:small;
+    margin-top:-60px;
+}
