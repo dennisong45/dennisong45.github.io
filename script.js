@@ -12,7 +12,7 @@ function changeImage() {
     else
     {
         document.getElementById('one_pic').style.backgroundImage = 'url("./images/san-fran.jpg")';
-        document.getElementById('one_pic').innerHTML = "Base in Bay Area";
+        document.getElementById('one_pic').innerHTML = "Base in the Bay Area";
     }
     
  
