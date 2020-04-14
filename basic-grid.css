@@ -23,7 +23,7 @@
 
     .two-box
     {
-        grid-auto-columns: 220px;
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
     }
 }
 ul{
